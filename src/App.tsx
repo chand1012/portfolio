@@ -24,6 +24,14 @@ function App() {
     </Link>
   );
 
+  const onTabChange = (value: string) => {
+    if (value.includes("https://")) {
+      window.open(value, "_blank");
+    } else {
+      history.push(value);
+    }
+  };
+
   return (
     <GeistProvider themeType={themeType}>
       <CssBaseline />
@@ -34,7 +42,7 @@ function App() {
           }}
           hideDivider
           value={location.pathname}
-          onChange={(value: any) => history.push(value)}
+          onChange={onTabChange}
         >
           <Tabs.Item label={"home"} value={"/"} />
           <Tabs.Item label={"blog"} value={"https://www.chand1012.dev/"} />
