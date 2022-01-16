@@ -37,6 +37,7 @@ function App() {
           onChange={(value: any) => history.push(value)}
         >
           <Tabs.Item label={"home"} value={"/"} />
+          <Tabs.Item label={"blog"} value={"https://www.chand1012.dev/"} />
           {/* <Tabs.Item label={"distros"} value={"/distros"} />
           <Tabs.Item label={"about"} value={"/about"} /> */}
         </Tabs>
