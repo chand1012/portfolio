@@ -1,6 +1,8 @@
-// import { Grid } from "@geist-ui/react";
+import { Grid } from "@geist-ui/react";
 import { Button, Link, Text } from "@geist-ui/react";
+import AboutMe from "../components/AboutMe";
 import Billboard from "../components/Billboard";
+import SocialMedia from "../components/SocialMedia";
 
 const ResumeLink = (
   <Link
@@ -15,13 +17,33 @@ const ResumeLink = (
 
 const Index = () => {
   return (
-    <Billboard
-      title="Chandler Lofland"
-      subtitle="Software Engineer"
-      background="/img/banner.jpg"
-      description="I am a full stack engineer with a passion for building software."
-      other={ResumeLink}
-    />
+    <Grid.Container direction="column" gap={1}>
+      <Grid>
+        <Billboard
+          title="Chandler Lofland"
+          subtitle="Software Engineer"
+          background="/img/banner.jpg"
+          description="I am a full stack engineer with a passion for building software."
+          other={ResumeLink}
+        />
+      </Grid>
+      <Grid>
+        <SocialMedia
+          twitter="Chand1012Dev"
+          github="chand1012"
+          linkedin="chandler-lofland-81217914b"
+          youtube="UCRKeF9dxhScFwB4VyOqxkhQ"
+          instagram="chand1012"
+          twitch="chand1012"
+        />
+      </Grid>
+      <Grid>
+        <AboutMe>
+          {" "}
+          I am a full stack engineer with a passion for building software.{" "}
+        </AboutMe>
+      </Grid>
+    </Grid.Container>
   );
 };
 

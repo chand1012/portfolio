@@ -2,9 +2,6 @@ import React from "react";
 import { Button, Divider, Grid, Link, Tooltip, Spacer } from "@geist-ui/react";
 import { Moon, Sun, Github } from "@geist-ui/react-icons";
 
-// the links are not centered
-// can someone who knows what they're doing help me out?
-
 export type ThemeType = "light" | "dark";
 
 export interface NavBarProps {
@@ -19,7 +16,9 @@ const NavBar = ({ title, children, themeSwitcher, themeType }: NavBarProps) => (
     <Spacer h={1} />
 
     <Grid.Container justify="space-around">
-      <Grid>{title}</Grid>
+      <Grid>
+        <Link href="/">{title}</Link>
+      </Grid>
       <Grid alignContent="center">{children}</Grid>
       <Grid>
         <Tooltip placement="bottom" text="Page Source">
