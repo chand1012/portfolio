@@ -35,6 +35,7 @@ const Index = () => {
           youtube="UCRKeF9dxhScFwB4VyOqxkhQ"
           instagram="chand1012"
           twitch="chand1012"
+          dev="chand1012"
         />
       </Grid>
       <Grid>

@@ -8,6 +8,7 @@ import {
   Twitch,
 } from "@geist-ui/react-icons";
 
+import DevTo from "./icons/DevTo";
 export interface SocialMediaProps {
   twitter?: string;
   github?: string;
@@ -17,6 +18,7 @@ export interface SocialMediaProps {
   facebook?: string;
   tiktok?: string;
   twitch?: string;
+  dev?: string;
 }
 
 const SocialMedia = ({
@@ -26,6 +28,7 @@ const SocialMedia = ({
   youtube,
   instagram,
   twitch,
+  dev,
 }: SocialMediaProps) => {
   const twitterLink = twitter ? (
     <Grid>
@@ -87,6 +90,16 @@ const SocialMedia = ({
     </Grid>
   ) : null;
 
+  const devLink = dev ? (
+    <Grid>
+      <Link href={`https://dev.to/${dev}`} target="_blank">
+        <Tooltip text="Dev.to">
+          <DevTo size={36} />
+        </Tooltip>
+      </Link>
+    </Grid>
+  ) : null;
+
   return (
     <Card>
       <Grid.Container gap={1} direction="column">
@@ -101,6 +114,7 @@ const SocialMedia = ({
             {instagramLink}
             {twitchLink}
             {youtubeLink}
+            {devLink}
           </Grid.Container>
         </Grid>
       </Grid.Container>
