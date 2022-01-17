@@ -13,7 +13,7 @@ const AboutMe = ({ children }: AboutMeProps) => {
           <Divider />
         </Grid>
         <Grid>
-          <Text h5>{children}</Text>
+          <Text font="1rem">{children}</Text>
         </Grid>
       </Grid.Container>
     </Card>
