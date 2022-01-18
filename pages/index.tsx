@@ -5,6 +5,9 @@ import { Box } from "@chakra-ui/layout";
 import CTA from "../components/CallToAction";
 import NavBar from "../components/NavBar";
 import Features from "../components/Features";
+import SocialMedia from "../components/SocialMedia";
+
+import socialMedia from "../config/socialMedia";
 
 const Home: NextPage = () => {
   // hook which help us to toggle the color modes

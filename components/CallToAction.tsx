@@ -12,6 +12,9 @@ import {
 
 import { FiExternalLink } from "react-icons/fi";
 
+import SocialMedia from "../components/SocialMedia";
+import socialMedia from "../config/socialMedia";
+
 const CTA = () => {
   return (
     <SimpleGrid columns={{ base: 1, md: 2 }} spacing={0}>
@@ -58,6 +61,7 @@ const CTA = () => {
           color={useColorModeValue("brand.600", "gray.400")}
           letterSpacing="wider"
         >
+          <SocialMedia {...socialMedia} /> <br />
           Software Developer and Startup Entrepreneur with a passion for
           creating cutting edge software in a rapidly changing industry.
         </chakra.p>
