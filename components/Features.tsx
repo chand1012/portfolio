@@ -15,7 +15,7 @@ export default function Features() {
             h={12}
             w={12}
             rounded="md"
-            bg={useColorModeValue("brand.500", "gray.900")}
+            bg={useColorModeValue("gray.900", "gray.500")}
             color="white"
           >
             {props.icon}
