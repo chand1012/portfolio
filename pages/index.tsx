@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import { Box } from "@chakra-ui/layout";
 import CTA from "../components/CallToAction";
 import NavBar from "../components/NavBar";
+import Features from "../components/Features";
 
 const Home: NextPage = () => {
   // hook which help us to toggle the color modes
@@ -23,6 +24,9 @@ const Home: NextPage = () => {
 
       <Box mx="auto" px={6} py={8}>
         <CTA />
+      </Box>
+      <Box mx="auto" px={6} py={8}>
+        <Features />
       </Box>
     </div>
   );

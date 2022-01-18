@@ -22,7 +22,6 @@ const CTA = () => {
           fit="contain"
           w="full"
           h={{ base: 64, md: "full" }}
-          bg="gray.100"
           loading="lazy"
         />
       </Flex>
