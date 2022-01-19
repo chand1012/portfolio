@@ -29,7 +29,9 @@ const Home: NextPage = () => {
       <Box mx="auto" px={6} py={8}>
         <Features />
       </Box>
-      <LatestArticles />
+      <Box mx="auto" px={6} py={8}>
+        <LatestArticles max={8} />
+      </Box>
     </div>
   );
 };

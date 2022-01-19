@@ -1,4 +1,12 @@
-import { Box, Spinner, Grid, GridItem } from "@chakra-ui/react";
+import {
+  Stack,
+  Spinner,
+  Text,
+  Grid,
+  GridItem,
+  useColorModeValue,
+  Box,
+} from "@chakra-ui/react";
 import ArticleCard from "../components/ArticleCard";
 import useArticles from "../hooks/articles";
 
@@ -8,9 +16,35 @@ export interface LatestArticlesProps {
 
 const LatestArticles = ({ max }: LatestArticlesProps) => {
   const { data, isLoading, error, isError } = useArticles(max);
+  const bgColor = useColorModeValue("gray.200", "gray.600");
+  const headerColor = useColorModeValue("gray.800", "gray.100");
+  const headerBoxColor = useColorModeValue("blue.100", "blue.800");
 
   if (isLoading) {
-    return <Spinner />;
+    return (
+      <Stack bg={bgColor}>
+        <Box
+          mx="auto"
+          px={2}
+          py={4}
+          rounded="lg"
+          shadow="lg"
+          bg={headerBoxColor}
+          maxW="2xl"
+        >
+          <Text
+            color={headerColor}
+            py={6}
+            align="center"
+            fontSize="4xl"
+            fontWeight="bold"
+          >
+            Latest Blog Posts
+          </Text>
+        </Box>
+        <Spinner alignSelf={"center"} />
+      </Stack>
+    );
   }
 
   if (isError) {
@@ -32,9 +66,32 @@ const LatestArticles = ({ max }: LatestArticlesProps) => {
   });
 
   return (
-    <Grid templateColumns="repeat(5, 1fr)" gap={6}>
-      {articles}
-    </Grid>
+    <Stack bg={bgColor} spacing={3}>
+      <Box
+        mx="auto"
+        my={4}
+        px={0}
+        py={2}
+        rounded="lg"
+        shadow="lg"
+        bg={headerBoxColor}
+        maxW="2xl"
+      >
+        <Text
+          color={headerColor}
+          py={2}
+          px={2}
+          align="center"
+          fontSize="4xl"
+          fontWeight="bold"
+        >
+          Latest Blog Posts
+        </Text>
+      </Box>
+      <Grid templateColumns="repeat(4, 1fr)" gap={6}>
+        {articles}
+      </Grid>
+    </Stack>
   );
 };
 

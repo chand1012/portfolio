@@ -15,7 +15,7 @@ export default function Features() {
             h={12}
             w={12}
             rounded="md"
-            bg={useColorModeValue("gray.900", "gray.500")}
+            bg={useColorModeValue("blue.100", "blue.800")}
             color="white"
           >
             {props.icon}
@@ -39,7 +39,7 @@ export default function Features() {
   };
   return (
     <Flex
-      bg={useColorModeValue("#F9FAFB", "gray.600")}
+      bg={useColorModeValue("gray.200", "gray.600")}
       p={20}
       w="auto"
       justifyContent="center"
@@ -85,7 +85,12 @@ export default function Features() {
             >
               <Feature
                 title="Frontend Technologies"
-                icon={<CgBrowser size={24} />}
+                icon={
+                  <CgBrowser
+                    style={{ color: useColorModeValue("gray.800", "white") }}
+                    size={24}
+                  />
+                }
               >
                 React, React Native, Tailwind CSS, Bootstrap CSS, HTML5
                 (HTML/CSS/JS)
