@@ -5,6 +5,7 @@ import { Box } from "@chakra-ui/layout";
 import CTA from "../components/CallToAction";
 import NavBar from "../components/NavBar";
 import Features from "../components/Features";
+import Footer from "../components/Footer";
 
 import styles from "../styles/Home.module.css";
 import LatestArticles from "../components/LatestArticles";
@@ -32,6 +33,9 @@ const Home: NextPage = () => {
       <Box mx="auto" px={6} py={8}>
         <LatestArticles max={3} />
       </Box>
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 };
