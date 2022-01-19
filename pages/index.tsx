@@ -30,7 +30,7 @@ const Home: NextPage = () => {
         <Features />
       </Box>
       <Box mx="auto" px={6} py={8}>
-        <LatestArticles max={8} />
+        <LatestArticles max={3} />
       </Box>
     </div>
   );

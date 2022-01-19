@@ -1,12 +1,4 @@
-import {
-  Stack,
-  Spinner,
-  Text,
-  Grid,
-  GridItem,
-  useColorModeValue,
-  Box,
-} from "@chakra-ui/react";
+import { Stack, Spinner, Text, useColorModeValue, Box } from "@chakra-ui/react";
 import ArticleCard from "../components/ArticleCard";
 import useArticles from "../hooks/articles";
 
@@ -54,14 +46,13 @@ const LatestArticles = ({ max }: LatestArticlesProps) => {
 
   const articles = data.items.map((article: any, index: number) => {
     return (
-      <GridItem key={index}>
-        <ArticleCard
-          title={article.title}
-          link={article.link}
-          date={article.pubDate}
-          description={article.contentSnippet}
-        />
-      </GridItem>
+      <ArticleCard
+        title={article.title}
+        link={article.link}
+        date={article.pubDate}
+        description={article.contentSnippet}
+        key={index}
+      />
     );
   });
 
@@ -88,9 +79,7 @@ const LatestArticles = ({ max }: LatestArticlesProps) => {
           Latest Blog Posts
         </Text>
       </Box>
-      <Grid templateColumns="repeat(4, 1fr)" gap={6}>
-        {articles}
-      </Grid>
+      <Stack spacing={3}>{articles}</Stack>
     </Stack>
   );
 };
