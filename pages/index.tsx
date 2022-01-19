@@ -14,7 +14,7 @@ const Home: NextPage = () => {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Chandler Lofland&apos;s Portfolio</title>
+        <title>Chandler Lofland | Driven. Intelligent. Software.</title>
         <meta
           name="description"
           content="A collection of my projects and works."
@@ -24,10 +24,10 @@ const Home: NextPage = () => {
 
       <NavBar />
 
-      <Box mx="auto" px={6} py={8}>
+      <Box mx={5} px={6} py={8}>
         <CTA />
       </Box>
-      <Box mx="auto" px={6} py={8}>
+      <Box px={6} py={8}>
         <Features />
       </Box>
       <Box mx="auto" px={6} py={8}>

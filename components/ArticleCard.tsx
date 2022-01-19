@@ -24,7 +24,7 @@ const ArticleCard = ({ title, description, link, date }: ArticleCardProps) => {
         py={4}
         rounded="lg"
         shadow="lg"
-        bg={useColorModeValue("blue.100", "blue.800")}
+        bg={useColorModeValue("white", "gray.800")}
         maxW="2xl"
       >
         <Flex justifyContent="space-between" alignItems="center">

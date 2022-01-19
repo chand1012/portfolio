@@ -1,4 +1,11 @@
-import { Stack, Spinner, Text, useColorModeValue, Box } from "@chakra-ui/react";
+import {
+  Flex,
+  Stack,
+  Spinner,
+  Text,
+  useColorModeValue,
+  Box,
+} from "@chakra-ui/react";
 import ArticleCard from "../components/ArticleCard";
 import useArticles from "../hooks/articles";
 
@@ -10,32 +17,44 @@ const LatestArticles = ({ max }: LatestArticlesProps) => {
   const { data, isLoading, error, isError } = useArticles(max);
   const bgColor = useColorModeValue("gray.200", "gray.600");
   const headerColor = useColorModeValue("gray.800", "gray.100");
-  const headerBoxColor = useColorModeValue("blue.100", "blue.800");
+  const headerBoxColor = useColorModeValue("white", "gray.800");
 
   if (isLoading) {
     return (
-      <Stack bg={bgColor}>
+      <Flex p={2} alignItems="center" justifyContent="center">
         <Box
           mx="auto"
           px={2}
           py={4}
           rounded="lg"
           shadow="lg"
-          bg={headerBoxColor}
+          bg={bgColor}
           maxW="2xl"
         >
-          <Text
-            color={headerColor}
-            py={6}
-            align="center"
-            fontSize="4xl"
-            fontWeight="bold"
-          >
-            Latest Blog Posts
-          </Text>
+          <Stack bg={bgColor}>
+            <Box
+              mx="auto"
+              px={2}
+              py={4}
+              rounded="lg"
+              shadow="lg"
+              bg={headerBoxColor}
+              maxW="2xl"
+            >
+              <Text
+                color={headerColor}
+                py={6}
+                align="center"
+                fontSize="4xl"
+                fontWeight="bold"
+              >
+                Latest Blog Posts
+              </Text>
+            </Box>
+            <Spinner alignSelf={"center"} />
+          </Stack>
         </Box>
-        <Spinner alignSelf={"center"} />
-      </Stack>
+      </Flex>
     );
   }
 
@@ -57,30 +76,42 @@ const LatestArticles = ({ max }: LatestArticlesProps) => {
   });
 
   return (
-    <Stack py={4} bg={bgColor} spacing={3}>
+    <Flex p={2} alignItems="center" justifyContent="center">
       <Box
         mx="auto"
-        my={4}
-        px={0}
-        py={2}
+        px={2}
+        py={4}
         rounded="lg"
         shadow="lg"
-        bg={headerBoxColor}
+        bg={bgColor}
         maxW="2xl"
       >
-        <Text
-          color={headerColor}
-          py={2}
-          px={2}
-          align="center"
-          fontSize="4xl"
-          fontWeight="bold"
-        >
-          Latest Blog Posts
-        </Text>
+        <Stack py={4} bg={bgColor} spacing={3}>
+          <Box
+            mx="auto"
+            my={4}
+            px={0}
+            py={2}
+            rounded="lg"
+            shadow="lg"
+            bg={headerBoxColor}
+            maxW="2xl"
+          >
+            <Text
+              color={headerColor}
+              py={2}
+              px={2}
+              align="center"
+              fontSize="4xl"
+              fontWeight="bold"
+            >
+              Latest Blog Posts
+            </Text>
+          </Box>
+          <Stack spacing={3}>{articles}</Stack>
+        </Stack>
       </Box>
-      <Stack spacing={3}>{articles}</Stack>
-    </Stack>
+    </Flex>
   );
 };
 
