@@ -57,7 +57,7 @@ const LatestArticles = ({ max }: LatestArticlesProps) => {
   });
 
   return (
-    <Stack bg={bgColor} spacing={3}>
+    <Stack py={4} bg={bgColor} spacing={3}>
       <Box
         mx="auto"
         my={4}
