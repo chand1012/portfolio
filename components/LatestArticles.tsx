@@ -6,7 +6,7 @@ import {
   useColorModeValue,
   Box,
 } from "@chakra-ui/react";
-import ArticleCard from "../components/ArticleCard";
+import ArticleCard from "./ArticleCard";
 import useArticles from "../hooks/articles";
 
 export interface LatestArticlesProps {
