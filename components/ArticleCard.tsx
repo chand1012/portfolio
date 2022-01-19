@@ -19,8 +19,7 @@ const ArticleCard = ({ title, description, link, date }: ArticleCardProps) => {
   return (
     <Flex
       bg={useColorModeValue("#F9FAFB", "gray.600")}
-      p={50}
-      w="full"
+      p={5}
       alignItems="center"
       justifyContent="center"
     >
