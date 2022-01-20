@@ -15,6 +15,8 @@ export interface ProjectCardProps {
   title: string;
   description: string;
   imageURL: string;
+  imageMode?: "cover" | "contain";
+  imageBgColor?: string;
   linkText: string;
   link: string;
 }
@@ -25,6 +27,8 @@ const ProjectCard = ({
   imageURL,
   linkText,
   link,
+  imageMode = "cover",
+  imageBgColor,
 }: ProjectCardProps) => {
   return (
     <Flex
@@ -48,7 +52,8 @@ const ProjectCard = ({
               rounded={{ lg: "lg" }}
               alt={title}
               src={imageURL}
-              fit="cover"
+              fit={imageMode}
+              bg={imageBgColor}
             />
           </Flex>
         </Box>

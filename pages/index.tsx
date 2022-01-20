@@ -14,6 +14,7 @@ import LatestArticles from "../components/LatestArticles";
 import Projects from "../components/Projects";
 
 import projects from "../config/projects";
+import workExperience from "../config/work";
 
 const ProjectLink = (
   <Flex alignItems="center" justifyContent="center">
@@ -49,6 +50,13 @@ const Home: NextPage = () => {
       </Box>
       <Box px={6} py={8}>
         <Features />
+      </Box>
+      <Box mx="auto" px={6} py={8}>
+        <Projects
+          projects={workExperience}
+          title="Work Experience"
+          description="Startup and Enterprise"
+        />
       </Box>
       <Box mx="auto" px={6} py={8}>
         <Projects
