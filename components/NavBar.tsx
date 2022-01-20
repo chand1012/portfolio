@@ -55,9 +55,6 @@ export default function Gslr() {
               color="brand.500"
               display={{ base: "none", md: "inline-flex" }}
             >
-              <Link href="https://blog.chand1012.dev/" isExternal>
-                <Button variant={"ghost"}>Blog</Button>
-              </Link>
               <IconButton
                 mt={4}
                 aria-label="Toggle Mode"
@@ -96,9 +93,6 @@ export default function Gslr() {
                   aria-label="Close menu"
                   onClick={mobileNav.onClose}
                 />
-                <Link href="https://blog.chand1012.dev/" isExternal>
-                  <Button variant="ghost">Blog</Button>
-                </Link>
                 <IconButton
                   mt={4}
                   aria-label="Toggle Mode"

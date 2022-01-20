@@ -1,5 +1,15 @@
 import React from "react";
-import { chakra, Box, Flex, useColorModeValue, Link } from "@chakra-ui/react";
+import {
+  chakra,
+  Box,
+  Flex,
+  useColorModeValue,
+  Link,
+  Image,
+  Icon,
+} from "@chakra-ui/react";
+
+import { FiExternalLink } from "react-icons/fi";
 
 export interface ProjectCardProps {
   title: string;
@@ -19,7 +29,6 @@ const ProjectCard = ({
   return (
     <Flex
       bg={useColorModeValue("gray.100", "gray.600")}
-      p={50}
       w="full"
       alignItems="center"
       justifyContent="center"
@@ -33,14 +42,15 @@ const ProjectCard = ({
         rounded={{ lg: "lg" }}
       >
         <Box w={{ lg: "50%" }}>
-          <Box
-            h={{ base: 64, lg: "full" }}
-            rounded={{ lg: "lg" }}
-            bgSize="cover"
-            style={{
-              backgroundImage: `url('${imageURL}')`,
-            }}
-          ></Box>
+          <Flex alignItems="center" justifyContent="center">
+            <Image
+              h={{ base: 64, lg: 325 }}
+              rounded={{ lg: "lg" }}
+              alt={title}
+              src={imageURL}
+              fit="cover"
+            />
+          </Flex>
         </Box>
 
         <Box py={12} px={6} maxW={{ base: "xl", lg: "5xl" }} w={{ lg: "50%" }}>
@@ -67,6 +77,7 @@ const ProjectCard = ({
               href={link}
             >
               {linkText}
+              <Icon as={FiExternalLink} ml={2} />
             </Link>
           </Box>
         </Box>

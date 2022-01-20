@@ -1,28 +1,23 @@
-import {
-  Flex,
-  Stack,
-  Spinner,
-  Text,
-  useColorModeValue,
-  Box,
-} from "@chakra-ui/react";
+import { Flex, Stack, useColorModeValue, Box, Text } from "@chakra-ui/react";
 
 import ProjectCard, { ProjectCardProps } from "./ProjectCard";
 
-const projects: ProjectCardProps[] = [
-  {
-    title: "Discord-Quick-Meme",
-    description:
-      "Discord Reddit retrieval bot on over 1,000 unique Discord servers. Uses Go and MongoDB.",
-    imageURL:
-      "https://raw.githubusercontent.com/chand1012/Discord-Quick-Meme/master/icon/MemeBotBlue2048.png",
-    linkText: "Check it out!",
-    link: "https://github.com/chand1012/Discord-Quick-Meme",
-  },
-];
+export interface ProjectsProps {
+  projects: ProjectCardProps[];
+  title: string;
+  description: string;
+  moreLink?: JSX.Element;
+}
 
-const Projects = () => {
+const Projects = ({
+  projects,
+  title,
+  description,
+  moreLink,
+}: ProjectsProps) => {
   const bgColor = useColorModeValue("gray.200", "gray.600");
+  const headerColor = useColorModeValue("gray.800", "gray.100");
+  const headerBoxColor = useColorModeValue("white", "gray.800");
 
   const projectCards = projects.map(
     (project: ProjectCardProps, index: number) => {
@@ -32,16 +27,31 @@ const Projects = () => {
 
   return (
     <Flex p={2} alignItems="center" justifyContent="center">
-      <Box
-        mx="auto"
-        px={2}
-        py={4}
-        rounded="lg"
-        shadow="lg"
-        bg={bgColor}
-        maxW="2xl"
-      >
-        <Stack bg={bgColor}>{projectCards}</Stack>
+      <Box mx="auto" px={2} py={4} rounded="lg" shadow="lg" bg={bgColor}>
+        <Stack spacing={6} bg={bgColor}>
+          <Box
+            mx="auto"
+            px={2}
+            py={4}
+            rounded="lg"
+            shadow="lg"
+            bg={headerBoxColor}
+            maxW="2xl"
+          >
+            <Flex p={2} alignItems="center" justifyContent="center">
+              <Text fontSize="4xl" fontWeight="bold" color={headerColor}>
+                {title}
+              </Text>
+            </Flex>
+            <Flex p={2} alignItems="center" justifyContent="center">
+              <Text fontSize="xl" color={headerColor}>
+                {description}
+              </Text>
+            </Flex>
+          </Box>
+          {projectCards}
+          {moreLink}
+        </Stack>
       </Box>
     </Flex>
   );

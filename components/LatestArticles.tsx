@@ -5,7 +5,12 @@ import {
   Text,
   useColorModeValue,
   Box,
+  Button,
+  Link,
+  Icon,
 } from "@chakra-ui/react";
+import { FiExternalLink } from "react-icons/fi";
+
 import ArticleCard from "./ArticleCard";
 import useArticles from "../hooks/articles";
 
@@ -21,7 +26,7 @@ const LatestArticles = ({ max }: LatestArticlesProps) => {
 
   if (isLoading) {
     return (
-      <Flex p={2} alignItems="center" justifyContent="center">
+      <Flex alignItems="center" justifyContent="center">
         <Box
           mx="auto"
           px={2}
@@ -109,6 +114,19 @@ const LatestArticles = ({ max }: LatestArticlesProps) => {
             </Text>
           </Box>
           <Stack spacing={3}>{articles}</Stack>
+
+          <Flex alignItems="center" justifyContent="center">
+            <Button
+              size={"lg"}
+              as={Link}
+              target="_blank"
+              href="https://blog.chand1012.dev/"
+              colorScheme={"blue"}
+            >
+              {" "}
+              Read More <Icon as={FiExternalLink} ml={2} />{" "}
+            </Button>
+          </Flex>
         </Stack>
       </Box>
     </Flex>
