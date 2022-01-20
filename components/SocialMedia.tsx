@@ -39,7 +39,7 @@ const SocialMedia = ({
     icons.push(
       <GridItem key={0}>
         <Tooltip label="GitHub">
-          <Link href={`https://github.com/${github}`}>
+          <Link target="_blank" href={`https://github.com/${github}`}>
             <BsGithub size={24} />
           </Link>
         </Tooltip>
@@ -51,7 +51,7 @@ const SocialMedia = ({
     icons.push(
       <GridItem key={1}>
         <Tooltip label="Twitter">
-          <Link href={`https://twitter.com/${twitter}`}>
+          <Link target="_blank" href={`https://twitter.com/${twitter}`}>
             <BsTwitter size={24} />
           </Link>
         </Tooltip>
@@ -63,7 +63,7 @@ const SocialMedia = ({
     icons.push(
       <GridItem key={2}>
         <Tooltip label="Facebook">
-          <Link href={`https://facebook.com/${facebook}`}>
+          <Link target="_blank" href={`https://facebook.com/${facebook}`}>
             <BsFacebook size={24} />
           </Link>
         </Tooltip>
@@ -75,7 +75,7 @@ const SocialMedia = ({
     icons.push(
       <GridItem key={3}>
         <Tooltip label="Instagram">
-          <Link href={`https://instagram.com/${instagram}`}>
+          <Link target="_blank" href={`https://instagram.com/${instagram}`}>
             <FiInstagram size={24} />
           </Link>
         </Tooltip>
@@ -87,7 +87,7 @@ const SocialMedia = ({
     icons.push(
       <GridItem key={4}>
         <Tooltip label="YouTube">
-          <Link href={`https://youtube.com/channel/${youtube}`}>
+          <Link target="_blank" href={`https://youtube.com/channel/${youtube}`}>
             <BsYoutube size={24} />
           </Link>
         </Tooltip>
@@ -99,7 +99,7 @@ const SocialMedia = ({
     icons.push(
       <GridItem key={5}>
         <Tooltip label="Twitch">
-          <Link href={`https://twitch.tv/${twitch}`}>
+          <Link target="_blank" href={`https://twitch.tv/${twitch}`}>
             <FaTwitch size={24} />
           </Link>
         </Tooltip>
@@ -111,7 +111,7 @@ const SocialMedia = ({
     icons.push(
       <GridItem key={6}>
         <Tooltip label="LinkedIn">
-          <Link href={`https://linkedin.com/in/${linkedin}`}>
+          <Link target="_blank" href={`https://linkedin.com/in/${linkedin}`}>
             <BsLinkedin size={24} />
           </Link>
         </Tooltip>
@@ -123,7 +123,7 @@ const SocialMedia = ({
     icons.push(
       <GridItem key={7}>
         <Tooltip label="Dev.to">
-          <Link href={`https://dev.to/${dev}`}>
+          <Link target="_blank" href={`https://dev.to/${dev}`}>
             <FaDev size={24} />
           </Link>
         </Tooltip>
@@ -135,7 +135,7 @@ const SocialMedia = ({
     icons.push(
       <GridItem key={8}>
         <Tooltip label="Email">
-          <Link href={`mailto:${email}`}>
+          <Link target="_blank" href={`mailto:${email}`}>
             <MdOutlineEmail size={24} />
           </Link>
         </Tooltip>
