@@ -7,6 +7,7 @@ import {
   Link,
   Image,
   Icon,
+  Button,
 } from "@chakra-ui/react";
 
 import { FiExternalLink } from "react-icons/fi";
@@ -71,19 +72,10 @@ const ProjectCard = ({
           </chakra.p>
 
           <Box mt={8}>
-            <Link
-              bg="gray.900"
-              color="gray.100"
-              px={5}
-              py={3}
-              fontWeight="semibold"
-              rounded="lg"
-              _hover={{ bg: "gray.800" }}
-              href={link}
-            >
+            <Button as={Link} href={link} isExternal colorScheme={"blue"}>
               {linkText}
               <Icon as={FiExternalLink} ml={2} />
-            </Link>
+            </Button>
           </Box>
         </Box>
       </Box>
