@@ -27,7 +27,7 @@ const workExperience: ProjectCardProps[] = [
       "Updated and compiled Linux for embedded systems using Yocto, updated and improved NodeJS web API, wrote automated testing software in Python.",
     imageURL: "/img/aps.jpg",
     linkText: "APS Website",
-    link: "https://autobag.com/",
+    link: "https://www.autobag.com/",
     imageMode: "contain",
     imageBgColor: "white",
   },

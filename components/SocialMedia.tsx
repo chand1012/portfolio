@@ -38,7 +38,7 @@ const SocialMedia = ({
   if (github) {
     icons.push(
       <GridItem key={0}>
-        <Tooltip label={github}>
+        <Tooltip label="GitHub">
           <Link href={`https://github.com/${github}`}>
             <BsGithub size={24} />
           </Link>
@@ -50,7 +50,7 @@ const SocialMedia = ({
   if (twitter) {
     icons.push(
       <GridItem key={1}>
-        <Tooltip label={twitter}>
+        <Tooltip label="Twitter">
           <Link href={`https://twitter.com/${twitter}`}>
             <BsTwitter size={24} />
           </Link>
@@ -74,7 +74,7 @@ const SocialMedia = ({
   if (instagram) {
     icons.push(
       <GridItem key={3}>
-        <Tooltip label={instagram}>
+        <Tooltip label="Instagram">
           <Link href={`https://instagram.com/${instagram}`}>
             <FiInstagram size={24} />
           </Link>
@@ -98,7 +98,7 @@ const SocialMedia = ({
   if (twitch) {
     icons.push(
       <GridItem key={5}>
-        <Tooltip label={twitch}>
+        <Tooltip label="Twitch">
           <Link href={`https://twitch.tv/${twitch}`}>
             <FaTwitch size={24} />
           </Link>
@@ -122,7 +122,7 @@ const SocialMedia = ({
   if (dev) {
     icons.push(
       <GridItem key={7}>
-        <Tooltip label={dev}>
+        <Tooltip label="Dev.to">
           <Link href={`https://dev.to/${dev}`}>
             <FaDev size={24} />
           </Link>
@@ -134,7 +134,7 @@ const SocialMedia = ({
   if (email) {
     icons.push(
       <GridItem key={8}>
-        <Tooltip label={email}>
+        <Tooltip label="Email">
           <Link href={`mailto:${email}`}>
             <MdOutlineEmail size={24} />
           </Link>
