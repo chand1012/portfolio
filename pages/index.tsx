@@ -31,6 +31,12 @@ const ProjectLink = (
   </Flex>
 );
 
+const boxPadding = {
+  base: 1,
+  md: 4,
+  lg: 6,
+};
+
 const Home: NextPage = () => {
   return (
     <div className={styles.container}>
@@ -62,20 +68,20 @@ const Home: NextPage = () => {
 
       <NavBar />
 
-      <Box mx={5} px={6} py={8}>
+      <Box mx="auto" px={boxPadding} py={8}>
         <CTA />
       </Box>
-      <Box px={6} py={8}>
+      <Box mx="auto" px={boxPadding} py={8}>
         <Features />
       </Box>
-      <Box mx="auto" px={6} py={8}>
+      <Box mx="auto" px={boxPadding} py={8}>
         <Projects
           projects={workExperience}
           title="Work Experience"
           description="Startup and Enterprise"
         />
       </Box>
-      <Box mx="auto" px={6} py={8}>
+      <Box mx="auto" px={boxPadding} py={8}>
         <Projects
           projects={projects}
           title="Projects"
@@ -83,7 +89,7 @@ const Home: NextPage = () => {
           moreLink={ProjectLink}
         />
       </Box>
-      <Box mx="auto" px={6} py={8}>
+      <Box mx="auto" px={boxPadding} py={8}>
         <LatestArticles max={3} />
       </Box>
       <footer>
