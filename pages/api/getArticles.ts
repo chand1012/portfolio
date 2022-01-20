@@ -4,7 +4,7 @@ import { NextApiRequest, NextApiResponse } from "next/types";
 
 import Parser from "rss-parser";
 
-const xmlUrl = "https://www.chand1012.dev/feed.xml";
+const xmlUrl = "https://blog.chand1012.dev/feed.xml";
 
 const getArticles = async (req: NextApiRequest, res: NextApiResponse) => {
   const { max } = req.query;
