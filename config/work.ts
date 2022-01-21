@@ -5,7 +5,7 @@ const workExperience: ProjectCardProps[] = [
     title: "PillarGG - Senior Full Stack Engineer",
     description:
       "Leading a development team to create AI-powered content creation software. Current Employer. Using React, Node, MongoDB, Python, and AWS.",
-    imageURL: "/img/pillar2.png",
+    imageURL: "/img/pillar.png",
     linkText: "Pillar Website",
     link: "https://pillar.gg",
     imageMode: "contain",

@@ -67,7 +67,7 @@ const ProjectCard = ({
           >
             {title}
           </chakra.h2>
-          <chakra.p mt={4} color={useColorModeValue("gray.600", "gray.400")}>
+          <chakra.p mt={4} color={useColorModeValue("gray.500", "gray.400")}>
             {description}
           </chakra.p>
 

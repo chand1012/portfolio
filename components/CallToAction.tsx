@@ -1,6 +1,6 @@
 import {
   chakra,
-  Box,
+  Stack,
   useColorModeValue,
   Flex,
   SimpleGrid,
@@ -65,18 +65,28 @@ const CTA = () => {
           Software Developer and Startup Entrepreneur with a passion for
           creating cutting edge software in a rapidly changing industry.
         </chakra.p>
-        <Box display="inline-flex" rounded="md" shadow="md">
+        <Stack py={8} spacing={4} direction="row" justify="center">
           <Button
             as={Link}
             target="_blank"
             href="https://docs.google.com/document/d/1zXkVOnQs5l1T-iCz4UO3FDavdChg_VACi2lqh2AY8ko/edit?usp=sharing"
             colorScheme={"blue"}
             variant="solid"
+            minW={100}
           >
             Resume
             <Icon as={FiExternalLink} ml={2} />
           </Button>
-        </Box>
+          <Button
+            as={Link}
+            href="https://blog.chand1012.dev/"
+            colorScheme={"blue"}
+            variant="solid"
+          >
+            Blog
+            <Icon as={FiExternalLink} ml={2} />
+          </Button>
+        </Stack>
       </Flex>
     </SimpleGrid>
   );

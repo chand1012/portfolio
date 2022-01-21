@@ -14,9 +14,11 @@ import {
   IconButton,
   CloseButton,
   Link,
+  Icon,
 } from "@chakra-ui/react";
 import { useColorMode } from "@chakra-ui/color-mode";
 import { AiOutlineMenu } from "react-icons/ai";
+import { FiExternalLink } from "react-icons/fi";
 import { MoonIcon, SunIcon } from "@chakra-ui/icons";
 
 export default function Gslr() {
@@ -32,21 +34,23 @@ export default function Gslr() {
         px={{ base: 2, sm: 4 }}
         py={4}
         shadow="md"
+        style={{ position: "sticky", top: 0, zIndex: 10 }}
       >
         <Flex alignItems="center" justifyContent="space-between" mx="auto">
           <Flex>
             <chakra.a
-              href="/"
+              href="#"
               title="Chandler's Portfolio"
               display="flex"
               alignItems="center"
             >
               <Avatar size="sm" src="/img/avatar.jpg" alt="Chandler" />
               <VisuallyHidden>Chandler Lofland</VisuallyHidden>
+
+              <chakra.h1 fontSize="xl" fontWeight="medium" ml="2">
+                Chandler Lofland
+              </chakra.h1>
             </chakra.a>
-            <chakra.h1 fontSize="xl" fontWeight="medium" ml="2">
-              Chandler Lofland
-            </chakra.h1>
           </Flex>
           <HStack display="flex" alignItems="center" spacing={1}>
             <HStack
@@ -55,11 +59,24 @@ export default function Gslr() {
               color="brand.500"
               display={{ base: "none", md: "inline-flex" }}
             >
-              <IconButton
-                mt={4}
-                aria-label="Toggle Mode"
-                onClick={toggleColorMode}
+              <Button
+                as={Link}
+                target="_blank"
+                href="https://docs.google.com/document/d/1zXkVOnQs5l1T-iCz4UO3FDavdChg_VACi2lqh2AY8ko/edit?usp=sharing"
+                variant="ghost"
               >
+                Resume
+                <Icon as={FiExternalLink} ml={2} />
+              </Button>
+              <Button
+                as={Link}
+                href="https://blog.chand1012.dev/"
+                variant="ghost"
+              >
+                Blog
+                <Icon as={FiExternalLink} ml={2} />
+              </Button>
+              <IconButton aria-label="Toggle Mode" onClick={toggleColorMode}>
                 {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
               </IconButton>
             </HStack>
@@ -93,6 +110,23 @@ export default function Gslr() {
                   aria-label="Close menu"
                   onClick={mobileNav.onClose}
                 />
+                <Button
+                  as={Link}
+                  target="_blank"
+                  href="https://docs.google.com/document/d/1zXkVOnQs5l1T-iCz4UO3FDavdChg_VACi2lqh2AY8ko/edit?usp=sharing"
+                  variant="ghost"
+                >
+                  Resume
+                  <Icon as={FiExternalLink} ml={2} />
+                </Button>
+                <Button
+                  as={Link}
+                  href="https://blog.chand1012.dev/"
+                  variant="ghost"
+                >
+                  Blog
+                  <Icon as={FiExternalLink} ml={2} />
+                </Button>
                 <IconButton
                   mt={4}
                   aria-label="Toggle Mode"

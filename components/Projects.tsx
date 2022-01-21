@@ -18,6 +18,7 @@ const Projects = ({
   const bgColor = useColorModeValue("gray.200", "gray.600");
   const headerColor = useColorModeValue("gray.800", "gray.100");
   const headerBoxColor = useColorModeValue("white", "gray.800");
+  const subHeaderColor = useColorModeValue("gray.600", "gray.400");
 
   const projectCards = projects.map(
     (project: ProjectCardProps, index: number) => {
@@ -44,7 +45,7 @@ const Projects = ({
               </Text>
             </Flex>
             <Flex p={2} alignItems="center" justifyContent="center">
-              <Text fontSize="xl" color={headerColor}>
+              <Text color={subHeaderColor} fontSize="xl">
                 {description}
               </Text>
             </Flex>
