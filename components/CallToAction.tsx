@@ -78,6 +78,7 @@ const CTA = () => {
             <Icon as={FiExternalLink} ml={2} />
           </Button>
           <Button
+            minW={75}
             as={Link}
             href="https://blog.chand1012.dev/"
             colorScheme={"blue"}
