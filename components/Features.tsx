@@ -92,7 +92,7 @@ export default function Features() {
                   />
                 }
               >
-                React, React Native, Tailwind CSS, Bootstrap CSS, HTML5
+                React, React Native, Ant Design, Bootstrap CSS, HTML5
                 (HTML/CSS/JS)
               </Feature>
 

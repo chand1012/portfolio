@@ -11,6 +11,13 @@ const projects: ProjectCardProps[] = [
     link: "https://github.com/chand1012/Discord-Quick-Meme",
   },
   {
+    title: "AutoStonks",
+    description: "Algorithm Trading bot written in Python for the Alpaca Market platform.",
+    imageURL: "/img/stocks.jpg",
+    linkText: "GitHub Page",
+    link: "https://github.com/CasualCodersProjects/autostonks",
+  },
+  {
     title: "ImageCropAPI",
     description:
       "Simple Image Cropping API. Allows users to crop, resize, and convert images via an HTTP web API. Written in Python with Pillow and FastAPI.",

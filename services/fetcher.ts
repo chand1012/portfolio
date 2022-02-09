@@ -3,7 +3,6 @@ const fetcher = (url: string) =>
     method: "GET",
     headers: {
       "Content-Type": "application/json",
-      token: localStorage.getItem("token") as string,
     },
   }).then((r) => r.json());
 
