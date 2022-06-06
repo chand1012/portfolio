@@ -80,19 +80,23 @@ const Home: NextPage = () => {
         <Features />
       </Box>
       <Box mx={boxMargins} px={boxPadding} py={8}>
-        <Projects
-          projects={workExperience}
-          title="Work Experience"
-          description="Startup and Enterprise"
-        />
+        <div id="experience">
+          <Projects
+            projects={workExperience}
+            title="Work Experience"
+            description="Startup and Enterprise"
+          />
+        </div>
       </Box>
       <Box mx={boxMargins} px={boxPadding} py={8}>
-        <Projects
-          projects={projects}
-          title="Projects"
-          description="My personal just-for-fun projects."
-          moreLink={ProjectLink}
-        />
+        <div id="projects">
+          <Projects
+            projects={projects}
+            title="Projects"
+            description="My personal just-for-fun projects."
+            moreLink={ProjectLink}
+          />
+        </div>
       </Box>
       <Box mx={boxMargins} px={boxPadding} py={8}>
         <LatestArticles max={3} />
