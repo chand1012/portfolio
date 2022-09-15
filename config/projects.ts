@@ -12,7 +12,8 @@ const projects: ProjectCardProps[] = [
   },
   {
     title: "AutoStonks",
-    description: "Algorithm Trading bot written in Python for the Alpaca Market platform.",
+    description:
+      "Algorithm Trading bot written in Python for the Alpaca Market platform.",
     imageURL: "/img/stocks.jpg",
     linkText: "GitHub Page",
     link: "https://github.com/CasualCodersProjects/autostonks",

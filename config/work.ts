@@ -2,17 +2,17 @@ import type { ProjectCardProps } from "../components/ProjectCard";
 
 const workExperience: ProjectCardProps[] = [
   {
-    title: "Stealth Startup",
+    title: "GoGoPool - Full Stack Engineer",
     description:
-      "Web3 startup on building on Avalanche.",
-    link: "#",
-    linkText: "Coming Soon",
-    imageURL: "/img/code.jpg",
+      "Software Engineer building decentralized liquid staking and subnet marketplace on Avalanche. Using React, EthersJS, Solidity, Typescript, and Hardhat.",
+    link: "https://www.gogopool.com",
+    linkText: "GoGoPool",
+    imageURL: "/img/ggp-logo-purple.svg",
     imageMode: "contain",
-    // imageBgColor: "white",
+    imageBgColor: "white",
   },
   {
-    title: "PillarGG - Senior Full Stack Engineer",
+    title: "PillarGG - Full Stack Engineer",
     description:
       "Lead a development team creating AI-powered content creation software. Used React, Node, MongoDB, Python, and AWS.",
     imageURL: "/img/pillar.png",

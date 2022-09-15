@@ -52,7 +52,7 @@ const CTA = () => {
           lineHeight="shorter"
           textShadow="2px 0 currentcolor"
         >
-          Chandler Lofland
+          Chandler
         </chakra.h1>
         <chakra.p
           pr={{ base: 0, lg: 16 }}

@@ -92,7 +92,7 @@ export default function Features() {
                   />
                 }
               >
-                React, React Native, Ant Design, Bootstrap CSS, HTML5
+                React, React Native, Ant Design, Chakra UI, Bootstrap CSS, HTML5
                 (HTML/CSS/JS)
               </Feature>
 
@@ -100,15 +100,18 @@ export default function Features() {
                 title="Backend Technologies"
                 icon={<CgServer size={24} />}
               >
-                NodeJS, Express, Django, FastAPI, Redis, MongoDB, MySQL
+                Web3, Blockchain, Ethereum, Avalanche, NodeJS, Express, Django,
+                FastAPI, Redis, MongoDB, MySQL
               </Feature>
 
               <Feature title="DevOps Technologies" icon={<FaCogs size={24} />}>
-                Docker, Jenkins, GitHub Actions, AWS, Linode, Linux
+                Docker, Jenkins, GitHub Actions, AWS, Linode, Linux, Windows,
+                Mac, Gitea
               </Feature>
 
               <Feature title="Languages" icon={<SiJavascript size={24} />}>
-                Javascript, Typescript, Python, Go, C/C++, Lua, Shell Scripting
+                Javascript, Typescript, Solidity, Python, Go, C/C++, Lua, Shell
+                Scripting
               </Feature>
             </Stack>
           </Box>

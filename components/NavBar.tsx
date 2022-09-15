@@ -44,7 +44,7 @@ export default function Gslr() {
               display="flex"
               alignItems="center"
             >
-              <Avatar size="sm" src="/img/avatar.jpg" alt="Chandler" />
+              <Avatar size="sm" src="/img/avatar.png" alt="Chandler" />
               <VisuallyHidden>Chandler Lofland</VisuallyHidden>
 
               <chakra.h1 fontSize="xl" fontWeight="medium" ml="2">
