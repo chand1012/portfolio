@@ -4,7 +4,7 @@ const workExperience: ProjectCardProps[] = [
   {
     title: "GoGoPool - Full Stack Engineer",
     description:
-      "Software Engineer building decentralized liquid staking and subnet marketplace on Avalanche. Using React, EthersJS, Solidity, Typescript, and Hardhat.",
+      "Software Engineer building decentralized liquid staking and subnet marketplace on Avalanche. Using React, EthersJS, Solidity, Typescript, Hardhat, Rust, Go, and Deno.",
     link: "https://www.gogopool.com",
     linkText: "GoGoPool",
     imageURL: "/img/ggp-logo-purple.svg",
