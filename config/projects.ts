@@ -27,6 +27,14 @@ const projects: ProjectCardProps[] = [
     link: "https://github.com/chand1012/ImageCropAPI",
   },
   {
+    title: "caffeineClipper",
+    description: "Simple Tauri App that clips twitch clips with a hotkey.",
+    imageURL: "/img/caffeineClipper.png",
+    linkText: "GitHub Page",
+    link: "https://github.com/chand1012/caffeineClipper",
+    imageBgColor: "white",
+  },
+  {
     title: "This Website",
     description:
       "A portfolio website built with Next.js, Vercel, and Chakra UI.",

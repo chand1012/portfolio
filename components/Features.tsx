@@ -92,7 +92,8 @@ export default function Features() {
                   />
                 }
               >
-                React, React Native, Ant Design, Chakra UI, Bootstrap CSS, HTML5
+                React, React Native, Ant Design, Chakra UI, Bootstrap CSS,
+                Tailwind CSS, Flowbite, Mantine, Tauri, Capacitor, HTML5
                 (HTML/CSS/JS)
               </Feature>
 
@@ -101,7 +102,8 @@ export default function Features() {
                 icon={<CgServer size={24} />}
               >
                 Web3, Blockchain, Ethereum, Avalanche, NodeJS, Express, Django,
-                FastAPI, Redis, MongoDB, MySQL
+                FastAPI, Redis, MongoDB, MySQL, Supabase, OpenAI GPT-3, NLP,
+                Stable Diffusion
               </Feature>
 
               <Feature title="DevOps Technologies" icon={<FaCogs size={24} />}>
