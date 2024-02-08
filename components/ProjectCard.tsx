@@ -49,7 +49,7 @@ const ProjectCard = ({
         <Box w={{ lg: "50%" }}>
           <Flex alignItems="center" justifyContent="center">
             <Image
-              h={{ base: 64, lg: 325 }}
+              h={{ base: 64, lg: 300 }}
               rounded={{ lg: "lg" }}
               alt={title}
               src={imageURL}
