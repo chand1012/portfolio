@@ -17,6 +17,14 @@ const projects: ProjectCardProps[] = [
     link: "https://ottodocs.timesurgelabs.com",
   },
   {
+    title: "sq",
+    description:
+      "Simple, easy to use converter and query tool for SQLite, CSV, JSON, and JSONL. Written in Go, inspired by jq.",
+    imageURL: "https://raw.githubusercontent.com/chand1012/sq/main/img/social_banner.jpg",
+    linkText: "GitHub",
+    link: "https://github.com/chand1012/sq",
+  },
+  {
     title: "caffeineClipper",
     description: "Simple Tauri App that clips twitch clips with a hotkey.",
     imageURL: "/img/caffeineClipper.png",
